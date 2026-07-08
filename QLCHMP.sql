@@ -1,0 +1,442 @@
+﻿USE master;
+Drop database The_Face_Shop
+GO
+
+-----------------------------------------
+-- 1. TẠO DATABASE
+-----------------------------------------
+IF DB_ID('The_Face_Shop') IS NOT NULL
+BEGIN
+    ALTER DATABASE The_Face_Shop SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+    DROP DATABASE The_Face_Shop;
+END
+GO
+
+CREATE DATABASE The_Face_Shop;
+GO
+
+USE The_Face_Shop;
+GO
+
+-----------------------------------------
+-- 2. TẠO CÁC BẢNG
+-----------------------------------------
+CREATE TABLE NGUOIDUNG (
+    MAND INT IDENTITY(1,1) PRIMARY KEY,
+    HOTEN NVARCHAR(100) NOT NULL,
+    EMAIL VARCHAR(100) NOT NULL,
+    MATKHAU VARCHAR(100) NOT NULL,
+    SODT VARCHAR(20),
+    DIACHI NVARCHAR(255),
+    VAITRO VARCHAR(20) NOT NULL,
+    NGAYTAO DATETIME NOT NULL
+);
+GO
+
+CREATE TABLE DANHMUC (
+    MADANHMUC VARCHAR(10) PRIMARY KEY,
+    TENDANHMUC NVARCHAR(100) NOT NULL
+);
+GO
+
+CREATE TABLE THUONGHIEU (
+    MATH INT IDENTITY(1,1) PRIMARY KEY,
+    TENTH NVARCHAR(100) NOT NULL,
+    MOTA NVARCHAR(255)
+);
+GO
+
+CREATE TABLE SANPHAM (
+    MASP INT IDENTITY(1,1) PRIMARY KEY,
+    TENSP NVARCHAR(200) NOT NULL,
+    GIABAN DECIMAL(18,2) NOT NULL,
+    HINHANH NVARCHAR(255),
+    MADM VARCHAR(10) NOT NULL,
+    MATH INT NOT NULL,
+    SOLUONG INT NOT NULL,
+    KHUYENMAI DECIMAL(5,2) NOT NULL,
+    NGAYTAO DATETIME NOT NULL,
+    MoTa NVARCHAR(MAX)
+);
+GO
+
+CREATE TABLE GIOHANG (
+    MAGH INT IDENTITY(1,1) PRIMARY KEY,
+    MAND INT NOT NULL,
+    NGAYCAPNHAT DATETIME NOT NULL
+);
+GO
+
+CREATE TABLE CT_GIOHANG (
+    MAGH INT NOT NULL,
+    MASP INT NOT NULL,
+    SOLUONG INT NOT NULL,
+    PRIMARY KEY (MAGH, MASP)
+);
+GO
+
+CREATE TABLE DONHANG (
+    MADH INT IDENTITY(1,1) PRIMARY KEY,
+    MAND INT NOT NULL,
+    NGAYDAT DATETIME NOT NULL,
+    DIACHI_GIAO NVARCHAR(255) NOT NULL,
+    TONGTIEN DECIMAL(18,2) NOT NULL,
+    TRANGTHAI NVARCHAR(50) NOT NULL
+);
+GO
+
+CREATE TABLE CT_DONHANG (
+    MADH INT NOT NULL,
+    MASP INT NOT NULL,
+    SOLUONG INT NOT NULL,
+    DONGIA DECIMAL(18,2) NOT NULL,
+    PRIMARY KEY (MADH, MASP)
+);
+GO
+
+CREATE TABLE GIAODICH (
+    MAGD INT IDENTITY(1,1) PRIMARY KEY,
+    MADH INT NOT NULL,
+    PHUONGTHUC NVARCHAR(50) NOT NULL,
+    SOTIEN DECIMAL(18,2) NOT NULL,
+    TRANGTHAI NVARCHAR(50) NOT NULL,
+    NGAYGD DATETIME NOT NULL
+);
+GO
+
+-----------------------------------------
+-- 3. NHẬP DỮ LIỆU
+-----------------------------------------
+INSERT DANHMUC VALUES
+('DM001',N'Chăm sóc da (Skincare)'),
+('DM002',N'Trang điểm (Makeup)'),
+('DM003',N'Chăm sóc cơ thể (Body)'),
+('DM101',N'Sữa rửa mặt'),
+('DM102',N'Toner'),
+('DM103',N'Serum'),
+('DM104',N'Kem dưỡng'),
+('DM201',N'Son môi'),
+('DM202',N'Kem nền'),
+('DM203',N'Phấn phủ'),
+('DM301',N'Sữa tắm'),
+('DM302',N'Kem dưỡng thể');
+GO
+
+INSERT THUONGHIEU (TENTH,MOTA)
+VALUES (N'The Face Shop',N'Thương hiệu mỹ phẩm Hàn Quốc');
+GO
+
+SET IDENTITY_INSERT NGUOIDUNG ON;
+INSERT NGUOIDUNG (MAND, HOTEN, EMAIL, MATKHAU, SODT, DIACHI, VAITRO, NGAYTAO) VALUES
+(1,N'Quản trị viên','admin@thefaceshop.com','Admin@123','0900000000',N'Hồ Chí Minh','admin',GETDATE()),
+(2,N'Nguyễn Văn An','an.nguyen@example.com','Pass1234','0911111111',N'Hà Nội','khachhang',GETDATE()),
+(3,N'Trần Thị Bình','binh.tran@example.com','Pass1234','0922222222',N'Hồ Chí Minh','khachhang',GETDATE());
+SET IDENTITY_INSERT NGUOIDUNG OFF;
+GO
+
+SET IDENTITY_INSERT GIOHANG ON;
+INSERT GIOHANG (MAGH, MAND, NGAYCAPNHAT) VALUES
+(1,2,GETDATE()),
+(2,3,GETDATE());
+SET IDENTITY_INSERT GIOHANG OFF;
+GO
+
+INSERT CT_GIOHANG VALUES
+(1,2,1),
+(1,6,1),
+(2,9,1);
+GO
+
+SET IDENTITY_INSERT SANPHAM ON;
+INSERT SANPHAM (MASP,TENSP,GIABAN,HINHANH,MADM,MATH,SOLUONG,KHUYENMAI,NGAYTAO,MoTa) VALUES
+(1,N'Nước Cân Bằng Yehwadam Revitalizing',3115000,'yehwadam_toner.jpg','DM001',1,100,0,'2024-01-15', N'Nước cân bằng Yehwadam...'),
+(2,N'Sữa Dưỡng Da Dr.Belmuer Clean Face Mild Lotion',4490000,'dr_belmuer.jpg','DM001',1,150,0,'2024-01-18', N'Sữa dưỡng Dr.Belmeur...'),
+(3,N'Tinh Chất Dưỡng The Therapy First Serum',950000,'therapy_serum.jpg','DM001',1,80,25,'2024-01-20', N'The Therapy First Serum...'),
+(4,N'Kem Dưỡng Mắt Yehwadam Eye Cream',890000,'yehwadam_eyecream.jpg','DM001',1,120,0,'2024-01-22', N'Kem dưỡng mắt Yehwadam...'),
+(5,N'Sữa Rửa Mặt Herb Day 365 Cleansing Foam Aloe',230000,'herbday_aloe.jpg','DM001',1,200,0,'2024-01-25', N'Sữa rửa mặt Herb Day 365...'),
+(6,N'Tẩy Trang Dạng Dầu Rice Water Bright',450000,'rice_oil.jpg','DM001',1,150,20,'2024-02-01', N'Dầu tẩy trang Rice Water Bright...'),
+(7,N'Tẩy Tế Bào Chết Smart Peeling White Jewel',350000,'smart_peeling.jpg','DM001',1,180,0,'2024-02-05', N'Tẩy tế bào chết White Jewel...'),
+(8,N'Mặt Nạ Giấy Real Nature Aloe',390000,'mask_aloe.jpg','DM001',1,500,0,'2024-02-10', N'Mặt nạ Real Nature Aloe...'),
+(9,N'Mặt Nạ Dưỡng Yehwadam Nutrition Mask',450000,'mask_yehwadam.jpg','DM001',1,450,0,'2024-02-12', N'Mặt nạ Yehwadam Nutrition Mask...'),
+(10,N'Phấn Nước Ink Lasting Foundation Cushion',780000,'inklasting_cushion.jpg','DM002',1,90,20,'2024-02-15', N'Phấn nước Ink Lasting Cushion...'),
+(11,N'Kem Nền FMGT Ink Lasting Glow',720000,'fmgt_glow.jpg','DM002',1,100,0,'2024-02-18', N'Kem nền FMGT Ink Lasting Glow...'),
+(12,N'Phấn Má Hồng Pastel Cushion Blusher',350000,'pastel_blusher.jpg','DM002',1,200,0,'2024-02-20', N'Phấn má Pastel Cushion Blusher...'),
+(13,N'Son Thỏi Rouge Satin Moisture',420000,'rouge_satin.jpg','DM002',1,250,1,'2024-02-22', N'Son Rouge Satin Moisture...'),
+(14,N'Son Tint Water Fit Lip Tint',390000,'waterfit_tint.jpg','DM002',1,280,0,'2024-02-25', N'Son tint Water Fit...'),
+(15,N'Son Dưỡng Môi Lipcare Cream',250000,'lipcare.jpg','DM002',1,300,0,'2024-03-01', N'Son dưỡng Lipcare Cream...'),
+(16,N'Mascara FMGT Designing Long Lash',420000,'mascara_longlash.jpg','DM002',1,150,0,'2024-03-05', N'Mascara Designing Long Lash...'),
+(17,N'Kẻ Viền Mắt Ink Graffi Brush Pen Liner',390000,'inkgraffi_liner.jpg','DM002',1,180,0,'2024-03-08', N'Kẻ mắt Ink Graffi...'),
+(18,N'Sữa Tắm Perfume Seed Rich Body Wash',390000,'perfume_bodywash.jpg','DM003',1,200,30,'2024-03-10', N'Sữa tắm Perfume Seed Rich Body Wash...'),
+(19,N'Dưỡng Thể Perfume Seed Velvet Lotion',420000,'perfume_lotion.jpg','DM003',1,180,0,'2024-03-12', N'Lotion dưỡng thể Perfume Seed Velvet...'),
+(20,N'Tẩy Tế Bào Chết Cơ Thể Smart Peeling Body',360000,'smart_body.jpg','DM003',1,150,0,'2024-03-15', N'Sản phẩm tẩy tế bào chết cơ thể...');
+SET IDENTITY_INSERT SANPHAM OFF;
+GO
+
+SET IDENTITY_INSERT DONHANG ON;
+INSERT DONHANG (MADH,MAND,NGAYDAT,DIACHI_GIAO,TONGTIEN,TRANGTHAI) VALUES
+(1,2,'2025-11-01',N'Hà Nội',0,N'Chờ xử lý'),
+(2,3,'2025-11-02',N'Hồ Chí Minh',0,N'Đang giao'),
+(3,2,'2025-11-03',N'Đà Nẵng',0,N'Hoàn thành'),
+(4,3,'2025-11-04',N'Hải Phòng',0,N'Hoàn thành'),
+(5,2,'2025-11-05',N'Cần Thơ',0,N'Hủy');
+SET IDENTITY_INSERT DONHANG OFF;
+
+
+INSERT CT_DONHANG (MADH,MASP,SOLUONG,DONGIA) VALUES
+(1,1,1,3115000), (1,6,1,450000),
+(2,10,1,780000), (2,13,2,420000),
+(3,18,2,390000), (3,19,1,420000),
+(4,3,1,950000), (4,7,1,350000),
+(5,5,2,230000);
+GO
+
+UPDATE DONHANG
+SET TONGTIEN = (
+    SELECT SUM(SOLUONG * DONGIA)
+    FROM CT_DONHANG
+    WHERE CT_DONHANG.MADH = DONHANG.MADH
+);
+GO
+
+SET IDENTITY_INSERT GIAODICH ON;
+INSERT GIAODICH (MAGD,MADH,PHUONGTHUC,SOTIEN,TRANGTHAI,NGAYGD) VALUES
+(1,1,N'COD',3565000,N'Chưa thanh toán','2025-11-01'),
+(2,2,N'Chuyển khoản',1620000,N'Đã thanh toán','2025-11-02'),
+(3,3,N'Ví điện tử',1200000,N'Đã thanh toán','2025-11-03'),
+(4,4,N'Tiền mặt',1300000,N'Đã thanh toán','2025-11-04'),
+(5,5,N'COD',460000,N'Hoàn tiền','2025-11-05');
+SET IDENTITY_INSERT GIAODICH OFF;
+GO
+
+-----------------------------------------
+-- 4. KHÓA NGOẠI + CHECK CONSTRAINT
+-----------------------------------------
+ALTER TABLE SANPHAM ADD CONSTRAINT FK_SANPHAM_DANHMUC FOREIGN KEY (MADM) REFERENCES DANHMUC(MADANHMUC);
+ALTER TABLE SANPHAM ADD CONSTRAINT FK_SANPHAM_THUONGHIEU FOREIGN KEY (MATH) REFERENCES THUONGHIEU(MATH);
+ALTER TABLE GIOHANG ADD CONSTRAINT FK_GIOHANG_NGUOIDUNG FOREIGN KEY (MAND) REFERENCES NGUOIDUNG(MAND);
+ALTER TABLE CT_GIOHANG ADD CONSTRAINT FK_CTGH_GIOHANG FOREIGN KEY (MAGH) REFERENCES GIOHANG(MAGH);
+ALTER TABLE CT_GIOHANG ADD CONSTRAINT FK_CTGH_SANPHAM FOREIGN KEY (MASP) REFERENCES SANPHAM(MASP);
+ALTER TABLE DONHANG ADD CONSTRAINT FK_DONHANG_NGUOIDUNG FOREIGN KEY (MAND) REFERENCES NGUOIDUNG(MAND);
+ALTER TABLE CT_DONHANG ADD CONSTRAINT FK_CTDH_DONHANG FOREIGN KEY (MADH) REFERENCES DONHANG(MADH);
+ALTER TABLE CT_DONHANG ADD CONSTRAINT FK_CTDH_SANPHAM FOREIGN KEY (MASP) REFERENCES SANPHAM(MASP);
+ALTER TABLE GIAODICH ADD CONSTRAINT FK_GIAODICH_DONHANG FOREIGN KEY (MADH) REFERENCES DONHANG(MADH);
+ALTER TABLE SANPHAM ADD CONSTRAINT CK_SANPHAM_GIABAN CHECK (GIABAN > 0);
+ALTER TABLE SANPHAM ADD CONSTRAINT CK_SANPHAM_SOLUONG CHECK (SOLUONG >= 0);
+ALTER TABLE SANPHAM ADD CONSTRAINT CK_SANPHAM_KHUYENMAI CHECK (KHUYENMAI BETWEEN 0 AND 100);
+ALTER TABLE NGUOIDUNG ADD CONSTRAINT CK_NGUOIDUNG_VAITRO CHECK (VAITRO IN ('admin','khachhang'));
+ALTER TABLE GIAODICH ADD CONSTRAINT CK_GIAODICH_SOTIEN CHECK (SOTIEN >= 0);
+ALTER TABLE DONHANG ADD CONSTRAINT CK_DONHANG_TRANGTHAI CHECK (TRANGTHAI IN (N'Chờ xử lý',N'Đang giao',N'Hoàn thành',N'Hủy'));
+GO
+
+-----------------------------------------
+-- 5. FUNCTION + PROCEDURE + TRIGGER + CURSOR
+-----------------------------------------
+-- FUNCTION --
+--TÍNH GIÁ BÁN SAU KHI ÁP DỤNG KHUYẾN MÃI(%)
+CREATE FUNCTION fn_GiaSauKhuyenMai (@Gia DECIMAL(18,2), @KhuyenMai DECIMAL(5,2))
+RETURNS DECIMAL(18,2)
+AS
+BEGIN
+    RETURN @Gia * (1 - @KhuyenMai/100);
+END
+GO
+--TÍNH TỔNG TIỀN CỦA MỘT ĐƠN HÀNG
+CREATE FUNCTION fn_TongTienDonHang (@MADH INT)
+RETURNS DECIMAL(18,2)
+AS
+BEGIN
+    DECLARE @Tong DECIMAL(18,2);
+    SELECT @Tong = SUM(SOLUONG * DONGIA) FROM CT_DONHANG WHERE MADH = @MADH;
+    RETURN ISNULL(@Tong,0);
+END
+GO
+--ĐẾM SỐ ĐƠN HÀNG CỦA MỘT KHÁCH
+CREATE FUNCTION fn_SoDonCuaKhach (@MAND INT)
+RETURNS INT
+AS
+BEGIN
+    RETURN (SELECT COUNT(*) FROM DONHANG WHERE MAND = @MAND);
+END
+GO
+--KIỂM TRA SẢN PHẨM CÒN HÀNG HAY KHÔNG
+CREATE FUNCTION fn_ConHang (@MASP INT)
+RETURNS BIT
+AS
+BEGIN
+    RETURN (SELECT CASE WHEN SOLUONG > 0 THEN 1 ELSE 0 END FROM SANPHAM WHERE MASP = @MASP);
+END
+GO
+--TÍNH TỔNG TIỀN GIỎ HÀNG
+CREATE FUNCTION fn_TongTienGioHang (@MAGH INT)
+RETURNS DECIMAL(18,2)
+AS
+BEGIN
+    RETURN (SELECT SUM(C.SOLUONG * S.GIABAN) FROM CT_GIOHANG C JOIN SANPHAM S ON C.MASP = S.MASP WHERE C.MAGH = @MAGH);
+END
+GO
+
+-- PROCEDURE --
+--TẠO ĐƠN HÀNG MỚI CHO KHÁCH HÀNG
+CREATE PROC sp_TaoDonHang @MAND INT, @DIACHI NVARCHAR(255)
+AS
+BEGIN
+    INSERT DONHANG (MAND, NGAYDAT, DIACHI_GIAO, TONGTIEN, TRANGTHAI) VALUES (@MAND, GETDATE(), @DIACHI, 0, N'Chờ xử lý');
+END
+GO
+--THÊM SẢN PHẨM VÀO CHI TIẾT ĐƠN HÀNG
+CREATE PROC sp_ThemCTDonHang @MADH INT, @MASP INT, @SOLUONG INT
+AS
+BEGIN
+    DECLARE @Gia DECIMAL(18,2);
+    SELECT @Gia = GIABAN FROM SANPHAM WHERE MASP = @MASP;
+    INSERT CT_DONHANG VALUES (@MADH, @MASP, @SOLUONG, @Gia);
+END
+GO
+--CẬP NHẬT TRẠNG THÁI ĐƠN HÀNG
+CREATE PROC sp_CapNhatTrangThaiDon @MADH INT, @TRANGTHAI NVARCHAR(50)
+AS
+BEGIN
+    UPDATE DONHANG SET TRANGTHAI = @TRANGTHAI WHERE MADH = @MADH;
+END
+GO
+--TRỪ SỐ LƯỢNG TỒN KHO SẢN PHẨM
+CREATE PROC sp_TruKho @MASP INT, @SOLUONG INT
+AS
+BEGIN
+    UPDATE SANPHAM SET SOLUONG = SOLUONG - @SOLUONG WHERE MASP = @MASP;
+END
+GO
+--THỐNG KÊ DOANH THU THEO NGÀY
+CREATE PROC sp_DoanhThuTheoNgay @NGAY DATE
+AS
+BEGIN
+    SELECT SUM(TONGTIEN) AS DoanhThu FROM DONHANG WHERE CAST(NGAYDAT AS DATE) = @NGAY;
+END
+GO
+
+-- TRIGGER --
+--CẬP NHẬT TỔNG TIỀN (TONGTIEN)
+CREATE TRIGGER trg_UpdateTongTien ON CT_DONHANG AFTER INSERT, DELETE
+AS
+BEGIN
+    UPDATE DONHANG SET TONGTIEN = dbo.fn_TongTienDonHang(MADH)
+    WHERE MADH IN (SELECT MADH FROM inserted UNION SELECT MADH FROM deleted);
+END
+GO
+--TỰ ĐỘNG TRỪ SỐ LƯỢNG TỒN KHO CỦA SẢN PHẨM SAU KHI BÁN
+CREATE TRIGGER trg_TruKhoSauBan ON CT_DONHANG AFTER INSERT
+AS
+BEGIN
+    UPDATE S
+    SET S.SOLUONG = S.SOLUONG - I.SOLUONG
+    FROM SANPHAM S
+    JOIN inserted I ON S.MASP = I.MASP;
+END
+GO
+--KIỂM TRA TỒN KHO TRƯỚC KHI CHO PHÉP THÊM SẢN PHẨM VÀO ĐƠN HÀNG
+CREATE TRIGGER trg_KiemTraTonKho ON CT_DONHANG INSTEAD OF INSERT
+AS
+BEGIN
+    IF EXISTS (SELECT 1 FROM inserted I JOIN SANPHAM S ON I.MASP = S.MASP WHERE I.SOLUONG > S.SOLUONG)
+    BEGIN
+        RAISERROR (N'Không đủ hàng trong kho', 16, 1);
+        ROLLBACK;
+        RETURN;
+    END
+    INSERT CT_DONHANG SELECT * FROM inserted;
+END
+GO
+--TỰ ĐỘNG CẬP NHẬT THỜI GIAN CẬP NHẬT GIỎ HÀNG
+CREATE TRIGGER trg_UpdateNgayGioHang ON CT_GIOHANG AFTER INSERT, DELETE
+AS
+BEGIN
+    UPDATE GIOHANG SET NGAYCAPNHAT = GETDATE()
+    WHERE MAGH IN (SELECT MAGH FROM inserted UNION SELECT MAGH FROM deleted);
+END
+GO
+--GHI NHẬN SỰ KIỆN PHÁT SINH GIAO DỊCH
+CREATE TRIGGER trg_LogGiaoDich ON GIAODICH AFTER INSERT
+AS
+BEGIN
+    PRINT N'Đã phát sinh giao dịch mới';
+END
+GO
+
+-- CURSOR --
+--DUYỆT TỪNG KHÁCH HÀNG MỘT
+--THỰC HIỆN XỬ LÝ TUẦN TỰ (ROW-BY-ROW)
+DECLARE cur_KhachHang CURSOR FOR SELECT MAND FROM NGUOIDUNG WHERE VAITRO = 'khachhang';
+OPEN cur_KhachHang;
+DECLARE @MAND_Cur INT;
+FETCH NEXT FROM cur_KhachHang INTO @MAND_Cur;
+WHILE @@FETCH_STATUS = 0
+BEGIN
+    PRINT 'Khách hàng: ' + CAST(@MAND_Cur AS VARCHAR);
+    FETCH NEXT FROM cur_KhachHang INTO @MAND_Cur;
+END
+CLOSE cur_KhachHang;
+DEALLOCATE cur_KhachHang;
+GO
+
+-----------------------------------------
+-- 6. PHÂN QUYỀN
+-----------------------------------------
+-- Kiểm tra login đã tồn tại chưa để tránh lỗi
+IF NOT EXISTS (SELECT * FROM sys.server_principals WHERE name = 'admin_tfs')
+BEGIN
+    CREATE LOGIN admin_tfs WITH PASSWORD = 'Admin@123';
+END
+
+IF NOT EXISTS (SELECT * FROM sys.database_principals WHERE name = 'admin_tfs')
+BEGIN
+    CREATE USER admin_tfs FOR LOGIN admin_tfs;
+END
+ALTER ROLE db_owner ADD MEMBER admin_tfs; -- Cách cấp quyền Control an toàn hơn
+
+IF NOT EXISTS (SELECT * FROM sys.server_principals WHERE name = 'user_tfs')
+BEGIN
+    CREATE LOGIN user_tfs WITH PASSWORD = 'User@123';
+END
+
+IF NOT EXISTS (SELECT * FROM sys.database_principals WHERE name = 'user_tfs')
+BEGIN
+    CREATE USER user_tfs FOR LOGIN user_tfs;
+END
+
+GRANT SELECT ON SANPHAM TO user_tfs;
+DENY INSERT, UPDATE, DELETE ON SANPHAM TO user_tfs;
+GO
+
+-----------------------------------------
+-- 7. GIAO TÁC & THỬ NGHIỆM
+-----------------------------------------
+BEGIN TRAN;
+BEGIN TRY
+    UPDATE SANPHAM SET SOLUONG = SOLUONG - 1 WHERE MASP = 1 AND SOLUONG > 0;
+    IF @@ROWCOUNT = 0 THROW 50001, N'Hết hàng', 1;
+    COMMIT;
+END TRY
+BEGIN CATCH
+    ROLLBACK;
+    PRINT ERROR_MESSAGE();
+END CATCH;
+GO
+
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+BEGIN TRAN;
+SELECT * FROM SANPHAM WHERE MASP = 1;
+COMMIT;
+GO
+
+-----------------------------------------
+-- 8. SAO LƯU VÀ KHÔI PHỤC DỮ LIỆU
+-----------------------------------------
+-- Backup
+BACKUP DATABASE The_Face_Shop
+TO DISK = 'D:\Backup\The_Face_Shop.bak'
+WITH INIT;
+
+-- Restore (demo)
+RESTORE DATABASE The_Face_Shop
+FROM DISK = 'D:\Backup\The_Face_Shop.bak'
+WITH REPLACE;

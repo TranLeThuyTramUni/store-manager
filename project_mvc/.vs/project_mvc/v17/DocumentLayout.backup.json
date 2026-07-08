@@ -1,0 +1,454 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|project_mvc||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|e:\\b\u00E0i t\u1EADp\\nhom3_thefaceshop\\project_mvc\\project_mvc\\views\\shared\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\views\\shared\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\views\\shared\\layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\views\\shared\\layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\views\\qlbaivietadmin\\quanlybaiviet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\views\\qlbaivietadmin\\quanlybaiviet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\views\\donhang\\chitiet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\views\\donhang\\chitiet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\views\\camnanglamdep\\camnanglamdep.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\views\\camnanglamdep\\camnanglamdep.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\controllers\\taikhoanadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\controllers\\taikhoanadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\app_data\\chatbot-data.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\app_data\\chatbot-data.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\controllers\\chatbotapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\controllers\\chatbotapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\controllers\\hotrokhachhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\controllers\\hotrokhachhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\views\\sanpham\\showsp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\views\\sanpham\\showsp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\views\\sanpham\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\views\\sanpham\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\views\\hotrokhachhang\\hotrokhachhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\views\\hotrokhachhang\\hotrokhachhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\views\\qlthuonghieuadmin\\quanlythuonghieu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\views\\qlthuonghieuadmin\\quanlythuonghieu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\views\\taikhoanadmin\\quanlytaikhoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\views\\taikhoanadmin\\quanlytaikhoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\views\\thongkeadmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\views\\thongkeadmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\controllers\\thongkeadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\controllers\\thongkeadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\models\\thongketongquandonhangviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\models\\thongketongquandonhangviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\models\\thongkedoanhthuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\models\\thongkedoanhthuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\models\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|solutionrelative:project_mvc\\models\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F233EA-6EA6-47A4-A229-FF751DB4C0CE}|project_mvc\\project_mvc.csproj|e:\\b\u00E0i t\u1EADp\\nhom3_thefaceshop\\project_mvc\\project_mvc\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "chatbot-data.json",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\App_Data\\chatbot-data.json",
+              "RelativeDocumentMoniker": "project_mvc\\App_Data\\chatbot-data.json",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\App_Data\\chatbot-data.json",
+              "RelativeToolTip": "project_mvc\\App_Data\\chatbot-data.json",
+              "ViewState": "AgIAABYIAAAAAAAAAAAtwCwIAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-07T17:01:39.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Web.config",
+              "RelativeDocumentMoniker": "project_mvc\\Web.config",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Web.config",
+              "RelativeToolTip": "project_mvc\\Web.config",
+              "ViewState": "AgIAADwAAAAAAAAAAAAgwFcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-12-07T12:52:57.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "project_mvc",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\project_mvc.csproj",
+              "RelativeDocumentMoniker": "project_mvc\\project_mvc.csproj",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\project_mvc.csproj",
+              "RelativeToolTip": "project_mvc\\project_mvc.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-07T15:33:13.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "project_mvc\\Views\\Home\\About.cshtml",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "project_mvc\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-07T04:03:12.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "web.config",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\web.config",
+              "RelativeDocumentMoniker": "project_mvc\\Views\\web.config",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\web.config",
+              "RelativeToolTip": "project_mvc\\Views\\web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-12-07T17:11:55.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "View.cshtml",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\Shared\\View.cshtml",
+              "RelativeDocumentMoniker": "project_mvc\\Views\\Shared\\View.cshtml",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\Shared\\View.cshtml",
+              "RelativeToolTip": "project_mvc\\Views\\Shared\\View.cshtml",
+              "ViewState": "AgIAAIUHAAAAAAAAAAAgwKkHAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-07T04:01:21.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "layoutAdmin.cshtml",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\Shared\\layoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "project_mvc\\Views\\Shared\\layoutAdmin.cshtml",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\Shared\\layoutAdmin.cshtml",
+              "RelativeToolTip": "project_mvc\\Views\\Shared\\layoutAdmin.cshtml",
+              "ViewState": "AgIAADcBAAAAAAAAAAAwwEgBAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-07T03:57:35.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ChatBotApiController.cs",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Controllers\\ChatBotApiController.cs",
+              "RelativeDocumentMoniker": "project_mvc\\Controllers\\ChatBotApiController.cs",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Controllers\\ChatBotApiController.cs",
+              "RelativeToolTip": "project_mvc\\Controllers\\ChatBotApiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T17:00:14.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TaiKhoanAdminController.cs",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Controllers\\TaiKhoanAdminController.cs",
+              "RelativeDocumentMoniker": "project_mvc\\Controllers\\TaiKhoanAdminController.cs",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Controllers\\TaiKhoanAdminController.cs",
+              "RelativeToolTip": "project_mvc\\Controllers\\TaiKhoanAdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T17:04:20.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "QuanLyBaiViet.cshtml",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\QLBaiVietAdmin\\QuanLyBaiViet.cshtml",
+              "RelativeDocumentMoniker": "project_mvc\\Views\\QLBaiVietAdmin\\QuanLyBaiViet.cshtml",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\QLBaiVietAdmin\\QuanLyBaiViet.cshtml",
+              "RelativeToolTip": "project_mvc\\Views\\QLBaiVietAdmin\\QuanLyBaiViet.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-07T23:47:39.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HoTroKhachHangController.cs",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Controllers\\HoTroKhachHangController.cs",
+              "RelativeDocumentMoniker": "project_mvc\\Controllers\\HoTroKhachHangController.cs",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Controllers\\HoTroKhachHangController.cs",
+              "RelativeToolTip": "project_mvc\\Controllers\\HoTroKhachHangController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T16:39:17.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "project_mvc\\App_Start\\RouteConfig.cs",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "project_mvc\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T15:52:15.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "project_mvc\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "project_mvc\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T15:32:11.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ShowSP.cshtml",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\SanPham\\ShowSP.cshtml",
+              "RelativeDocumentMoniker": "project_mvc\\Views\\SanPham\\ShowSP.cshtml",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\SanPham\\ShowSP.cshtml",
+              "RelativeToolTip": "project_mvc\\Views\\SanPham\\ShowSP.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-07T15:28:04.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\SanPham\\Details.cshtml",
+              "RelativeDocumentMoniker": "project_mvc\\Views\\SanPham\\Details.cshtml",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\SanPham\\Details.cshtml",
+              "RelativeToolTip": "project_mvc\\Views\\SanPham\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-07T12:52:11.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HoTroKhachHang.cshtml",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\HoTroKhachHang\\HoTroKhachHang.cshtml",
+              "RelativeDocumentMoniker": "project_mvc\\Views\\HoTroKhachHang\\HoTroKhachHang.cshtml",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\HoTroKhachHang\\HoTroKhachHang.cshtml",
+              "RelativeToolTip": "project_mvc\\Views\\HoTroKhachHang\\HoTroKhachHang.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-07T04:16:36.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CamNangLamDep.cshtml",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\CamNangLamDep\\CamNangLamDep.cshtml",
+              "RelativeDocumentMoniker": "project_mvc\\Views\\CamNangLamDep\\CamNangLamDep.cshtml",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\CamNangLamDep\\CamNangLamDep.cshtml",
+              "RelativeToolTip": "project_mvc\\Views\\CamNangLamDep\\CamNangLamDep.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-07T04:10:15.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SanPhamController.cs",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Controllers\\SanPhamController.cs",
+              "RelativeDocumentMoniker": "project_mvc\\Controllers\\SanPhamController.cs",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Controllers\\SanPhamController.cs",
+              "RelativeToolTip": "project_mvc\\Controllers\\SanPhamController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T04:07:34.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "QuanLyTaiKhoan.cshtml",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\TaiKhoanAdmin\\QuanLyTaiKhoan.cshtml",
+              "RelativeDocumentMoniker": "project_mvc\\Views\\TaiKhoanAdmin\\QuanLyTaiKhoan.cshtml",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\TaiKhoanAdmin\\QuanLyTaiKhoan.cshtml",
+              "RelativeToolTip": "project_mvc\\Views\\TaiKhoanAdmin\\QuanLyTaiKhoan.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-07T03:58:49.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "QuanLyThuongHieu.cshtml",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\QLThuongHieuAdmin\\QuanLyThuongHieu.cshtml",
+              "RelativeDocumentMoniker": "project_mvc\\Views\\QLThuongHieuAdmin\\QuanLyThuongHieu.cshtml",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\QLThuongHieuAdmin\\QuanLyThuongHieu.cshtml",
+              "RelativeToolTip": "project_mvc\\Views\\QLThuongHieuAdmin\\QuanLyThuongHieu.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-07T03:57:53.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ThongKeTongQuanDonHangViewModel.cs",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Models\\ThongKeTongQuanDonHangViewModel.cs",
+              "RelativeDocumentMoniker": "project_mvc\\Models\\ThongKeTongQuanDonHangViewModel.cs",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Models\\ThongKeTongQuanDonHangViewModel.cs",
+              "RelativeToolTip": "project_mvc\\Models\\ThongKeTongQuanDonHangViewModel.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T03:49:53.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\ThongKeAdmin\\Index.cshtml",
+              "RelativeDocumentMoniker": "project_mvc\\Views\\ThongKeAdmin\\Index.cshtml",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\ThongKeAdmin\\Index.cshtml",
+              "RelativeToolTip": "project_mvc\\Views\\ThongKeAdmin\\Index.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-07T03:41:30.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ThongKeDoanhThuViewModel.cs",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Models\\ThongKeDoanhThuViewModel.cs",
+              "RelativeDocumentMoniker": "project_mvc\\Models\\ThongKeDoanhThuViewModel.cs",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Models\\ThongKeDoanhThuViewModel.cs",
+              "RelativeToolTip": "project_mvc\\Models\\ThongKeDoanhThuViewModel.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T03:40:04.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ThongKeAdminController.cs",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Controllers\\ThongKeAdminController.cs",
+              "RelativeDocumentMoniker": "project_mvc\\Controllers\\ThongKeAdminController.cs",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Controllers\\ThongKeAdminController.cs",
+              "RelativeToolTip": "project_mvc\\Controllers\\ThongKeAdminController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T03:33:42.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DONHANG.cs",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Models\\DONHANG.cs",
+              "RelativeDocumentMoniker": "project_mvc\\Models\\DONHANG.cs",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Models\\DONHANG.cs",
+              "RelativeToolTip": "project_mvc\\Models\\DONHANG.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T03:37:49.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChiTiet.cshtml",
+              "DocumentMoniker": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\DonHang\\ChiTiet.cshtml",
+              "RelativeDocumentMoniker": "project_mvc\\Views\\DonHang\\ChiTiet.cshtml",
+              "ToolTip": "E:\\B\u00E0i t\u1EADp\\Nhom3_TheFaceShop\\project_mvc\\project_mvc\\Views\\DonHang\\ChiTiet.cshtml",
+              "RelativeToolTip": "project_mvc\\Views\\DonHang\\ChiTiet.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-07T03:33:06.526Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
